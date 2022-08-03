@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #D9C6A3;
+    --cor1: #8c582acc;
+    --cor2: #592D14;
+    --cor3: #260202;
+    --cor4: #400A0A;
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: var(--cor4);
+    margin: 30px;
+    background-image: linear-gradient(to right, #ae9669, transparent);
+    animation: fadeInFadeOut 10s linear infinite;
+}
+
+@keyframes fadeInFadeOut {
+    0% {color: var(--cor4);}
+    25% {color: orangered;}
+    50% {color: yellow;}
+    75% {color: rgb(255, 0, 128);}
+    100% {color: var(--cor4);}
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: var(--cor4);
+    margin: 30px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor3);
+    margin: auto;
+    text-align: justify;
+    text-indent: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3);
+    background-color: var(--cor0);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+body > img {
+    height: 350px;
+    width: 350px;
+}
+
+img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+#centro-distribuicao > img {
+    width: 65%;
+    display: block;
+    margin: auto;
+}
+
+#centro-distribuicao figcaption {
+    margin-left: 210px;
+    padding-top: 10px;
+}
+
+#historia {
+    margin-left: 100px;
+}
+
+#familia-pelho > img {
+    width: 40%;
+    display: inline;
+    margin-left: 150px;
+}
+
+#familia-pelho > figcaption {
+    margin-left: 210px;
+    padding-top: 10px;
+}
+
+#diferenciais {
+    margin-left: 100px;
+}
+
+ul {
+    transition-timing-function: ease;
+    transition-duration: 2s;
+    transition-property: all;
+    width: 42%;
+    margin-left: 150px;
+    list-style-type: '\2714\00A0\00A0';
+    
+}
+
+ul > li {
+    color: #260202;
+}
+
+ul:hover {
+    transform: scale(1.1);
+    background-color: #D9C6A3;
+}
+
+footer {
+    height: 150px;
+    width: 200px;
+    display: block;
+    margin: auto;
+}
