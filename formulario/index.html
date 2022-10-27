@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <div id="formulario">
+
+        <h1>Formulário</h1>
+
+        <form action="">
+            <div> <!-- tipo text -->
+                <label for="nome">Nome</label>
+                <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    size="30"
+                    maxlength="20"
+                    required
+                    autofocus
+                />
+            </div>
+                <br/>
+                
+            <div> <!-- tipos text e number -->
+                <label for="endereco">Endereço</label>
+                <input
+                    type="text"
+                    name="endereco"
+                    id="endereco"
+                    size="80"
+                    maxlength="50"
+                />
+                <input
+                    type="number"
+                    name="numero"
+                    id="numero"
+                    step="1"
+                    min="1"
+                    max="100"
+                />
+            </div>
+                <br/>
+            
+            <div> <!-- textarea -->
+                <label for="obs">Observações</label> <br/>
+                <textarea
+                    name="obs"
+                    id="obs"
+                    cols="30"
+                    rows="10"
+                    placeholder="Observações..."
+                ></textarea>
+            </div>
+                <br/>
+                
+            <div> <!-- tipo color -->
+                <label for="cor">Cor</label>
+                <input
+                    type="color"
+                    name="cor"
+                    id="cor"
+                />
+            </div>
+                <br/>
+            
+            <div> <!-- tipo range -->
+                <label for="valor">Valor (entre 0 e 50):</label>
+                <input
+                    type="range"
+                    name="valor"
+                    id="valor"
+                    min="0"
+                    max="50"
+                />
+            </div>
+                <br/>
+                
+            <div> <!-- tipo search -->
+                <label for="pesquisar">Pesquisar:</label>
+                <input
+                    type="search"
+                    name="pesquisar"
+                    id="pesquisar"
+                />
+            </div>
+                <br/>
+            
+            <div> <!-- tipo file -->
+                <label for="myfile">Select a file:</label>
+                <input
+                    type="file"
+                    name="myfile"
+                    id="myfile"
+                />
+            </div>
+                <br/>
+            
+            <div> <!-- tipo oculto -->
+                <input
+                    type="hidden"
+                    value="Conteúdo oculto"
+                />
+            </div>
+            
+            <div> <!-- tipo de caixa de seleção -->
+                <p>Botão Checkbox</p>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bicicleta" />
+                <label for="vehicle1">Bicicleta</label><br/>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Carro" />
+                <label for="vehicle2">Carro</label><br/>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Moto" checked />
+                <label for="vehicle3">Moto</label>
+            </div>
+                <br/>
+            
+            <div> <!-- tipo botão radio -->
+                <p>Botão Rádio</p>
+                <p>Tem que usar o mesmo name</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br/>
+                <input type="radio" id="css" name="fav_language" value="CSS" checked>
+                <label for="css">CSS</label><br/>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label><br/>
+            </div>
+                <br/>
+            
+            <div> <!-- tag select -->
+                <label for="produtos">Produtos</label>
+                <select name="produtos" id="produtos">
+                    <option value="Arroz">Arroz</option>
+                    <option value="Feijão">Feijão</option>
+                    <option value="Leite">Leite</option>
+                    <option value="Açúcar" selected>Açúcar</option>
+                </select>
+            </div>
+        </form>
+    </div>    
+</body>
+</html>
