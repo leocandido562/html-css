@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#tela_login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure, h1 {
+    text-align: center;
+}
+
+img {
+    -webkit-user-drag: none; /* o usuário nao pode arrastar a imagem */
+}
+
+h1 {
+    margin-bottom: 1rem; /* 16px */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: inline-block; /* foi colocado porque nao deixa mexer na largura */
+    width: 70px;
+}
+
+input {
+    font-size: 1.05rem;
+    border-radius: 5px;
+    border: 1px solid #cecece;
+    padding: 5px;
+
+}
+
+input[type=email], input[type=password] {
+    width: 250px;
+    margin-bottom: 1rem;
+    height: 30px;
+}
+
+input[type=submit], input[type=reset] {
+    width: 130px;
+    height: 2.5rem;
+}
+
+input[type=submit] {
+    background: #1D495f;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background: #cecece;
+    color: #1D495f;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background: #FF6600;
+    color: #fff;
+}
+
+input[type=reset]:hover {
+    background: #cecece;
+    color: #FF6600;
+    font-weight: bolder;
+    cursor: pointer;
+}
