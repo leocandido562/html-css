@@ -5,31 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Currículo - Perfil</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="icon" href="imagens/favicon-32x32.png">
 </head>
 <body>
-    <main>
+    <main id="tela_perfil">
         <span id="topo"></span>
         <header>
             <figure>
                 <img
+                    id="foto_perfil"
                     src="imagens/foto-de-perfil.png"
                     width="200px"
                     alt="Foto do Perfil"
                 />
                 <figcaption>Perfil de Leonardo</figcaption>
             </figure>
-            <h1>Leonardo Candido Czaplicki</h1>
-            <hr/>
-            <blockquote> &#10077; Profissional de Informática</blockquote>
-            <span class="localizacao">Guaíba</span>,
-            <span class="localizacao">Rio Grande do Sul</span> &sdot;
-            <span class="localizacao">Brasil</span> &sdot;
-            <nav>
-                <a href="#info-contatos">Informações de contato</a>
-                <a href="projetos.html">Projetos</a>
-            </nav>
+            <div id="dados">
+                <h1>Leonardo Candido Czaplicki</h1>
+
+                <blockquote> &#10077; Profissional de Informática</blockquote>
+
+                <div id="locais">
+                    <span class="localizacao">Guaíba</span>,
+                    <span class="localizacao">Rio Grande do Sul</span> &sdot;
+                    <span class="localizacao">Brasil</span> &sdot;
+
+                    <nav id="menu_top">
+                        <a href="#info-contatos">Informações de contato</a>
+                        <a href="projetos.html">Projetos</a>
+                    </nav>
+                </div>
+            </div>
         </header>
         <section id="perfil">
             <article>
